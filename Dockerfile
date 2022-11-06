@@ -26,5 +26,5 @@ EXPOSE 80
 
 RUN bundle exec rails new /myapp
 
-# Railsサーバー起動
-CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
+# # Railsサーバー起動
+# CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
