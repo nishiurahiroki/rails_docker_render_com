@@ -28,6 +28,7 @@ RUN bundle exec rails new /myapp
 
 RUN rm -rf /myapp/config/environments/production.rb
 COPY ./config/production.rb /myapp/config/environments/production.rb
+COPY ./config/development.rb /myapp/config/environments/development.rb
 
 # # Railsサーバー起動
-# CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
+CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
